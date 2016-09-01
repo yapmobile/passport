@@ -69,9 +69,9 @@ class AccessTokenController
 
         $payload = json_decode($response->getBody()->__toString(), true);
 
-        if (isset($payload['access_token'])) {
-            $this->revokeOtherAccessTokens($payload);
-        }
+//        if (isset($payload['access_token'])) {
+//            $this->revokeOtherAccessTokens($payload);
+//        }
 
         return $response;
     }
